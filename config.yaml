@@ -3,7 +3,7 @@
 
 # LLM Proxy Settings
 llm_proxy:
-  base_url: "https://proxyapi-virid.vercel.app/v1"
+  base_url: "http://102.53.4.18:9039/v1"
   api_key: "sk-random"
 
 # Tavily Search API Key
@@ -13,23 +13,23 @@ tavily:
 llm_routing:
   orchestrator_agent:
     provider: "openai"
-    model: "moonshotai/kimi-k2-instruct-0905"
+    model: "kimi-k2.5:cloud"
   
   researcher_agent:
     provider: "openai"
-    model: "moonshotai/kimi-k2-instruct-0905"
+    model: "kimi-k2.5:cloud"
   
   narrative_agent:
     provider: "openai"
-    model: "moonshotai/kimi-k2-instruct-0905"
+    model: "kimi-k2.5:cloud"
   
   design_agent:
     provider: "openai"
-    model: "moonshotai/kimi-k2-instruct-0905"
+    model: "kimi-k2.5:cloud"
   
   vision_qa_agent:
     provider: "openai"
-    model: "moonshotai/kimi-k2-instruct-0905"
+    model: "kimi-k2.5:cloud"
 
 # Search tool configuration
 search:
