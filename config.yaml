@@ -1,0 +1,39 @@
+# AI Presentation CLI Configuration
+# Model routing configuration - easily swap models without touching Python code
+
+# LLM Proxy Settings
+llm_proxy:
+  base_url: "https://proxyapi-virid.vercel.app/v1"
+  api_key: "sk-random"
+
+llm_routing:
+  orchestrator_agent:
+    provider: "openai"
+    model: "moonshotai/kimi-k2-instruct-0905"
+  
+  researcher_agent:
+    provider: "openai"
+    model: "moonshotai/kimi-k2-instruct-0905"
+  
+  narrative_agent:
+    provider: "openai"
+    model: "moonshotai/kimi-k2-instruct-0905"
+  
+  design_agent:
+    provider: "openai"
+    model: "moonshotai/kimi-k2-instruct-0905"
+  
+  vision_qa_agent:
+    provider: "openai"
+    model: "moonshotai/kimi-k2-instruct-0905"
+
+# Search tool configuration
+search:
+  tavily:
+    max_results: 5
+
+# Visual QA configuration
+visual_qa:
+  max_iterations: 3
+  screenshot_width: 1280
+  screenshot_height: 720

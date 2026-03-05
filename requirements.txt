@@ -1,0 +1,33 @@
+# AI Presentation CLI Dependencies
+
+# Core LangGraph & LangChain
+langgraph>=0.0.20
+langchain>=0.1.0
+langchain-core>=0.1.0
+
+# LLM Providers
+langchain-openai>=0.0.5
+langchain-anthropic>=0.1.0
+
+# Search Tools
+langchain-community>=0.0.10
+tavily-python>=0.3.0
+
+# CLI Interface
+typer>=0.9.0
+rich>=13.0.0
+
+# PowerPoint Generation
+python-pptx>=0.6.23
+
+# Visual QA - Playwright
+playwright>=1.40.0
+
+# Configuration
+pyyaml>=6.0
+
+# Image processing (fallback)
+pillow>=10.0.0
+
+# Utilities
+python-dotenv>=1.0.0
