@@ -13,19 +13,19 @@ tavily:
 llm_routing:
   orchestrator_agent:
     provider: "openai"
-    model: "kimi-k2.5:cloud"
+    model: "minimax-m2:cloud"
   
   researcher_agent:
     provider: "openai"
-    model: "kimi-k2.5:cloud"
+    model: "minimax-m2:cloud"
   
   narrative_agent:
     provider: "openai"
-    model: "kimi-k2.5:cloud"
+    model: "minimax-m2:cloud"
   
   design_agent:
     provider: "openai"
-    model: "kimi-k2.5:cloud"
+    model: "minimax-m2:cloud"
   
   vision_qa_agent:
     provider: "openai"
