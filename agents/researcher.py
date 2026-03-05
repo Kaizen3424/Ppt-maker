@@ -16,10 +16,11 @@ def researcher_agent(state: PresentationState, config: Config) -> PresentationSt
     """
     state["current_agent"] = "Researcher: Gathering web and document data..."
     
-    # Get search tool
-    search_config = config._config.get("search", {}).get("tavily", {})
-    max_results = search_config.get("max_results", 5)
-    search_tool = get_search_tool(max_results=max_results)
+    # Get search tool with API key from config
+    search_config = config.get_tavily_config()
+    max_results = config._config.get("search", {}).get("tavily", {}).get("max_results", 5)
+    api_key = search_config.get("api_key")
+    search_tool = get_search_tool(max_results=max_results, api_key=api_key)
     
     prompt = state["prompt"]
     slides = state["json_deck"].get("slides", [])

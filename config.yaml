@@ -6,6 +6,10 @@ llm_proxy:
   base_url: "https://proxyapi-virid.vercel.app/v1"
   api_key: "sk-random"
 
+# Tavily Search API Key
+tavily:
+  api_key: "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"
+
 llm_routing:
   orchestrator_agent:
     provider: "openai"

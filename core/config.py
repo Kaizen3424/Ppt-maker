@@ -72,6 +72,10 @@ class Config:
     def get_proxy_config(self) -> Dict[str, str]:
         """Get proxy configuration for LLM calls."""
         return self._config.get("llm_proxy", {})
+    
+    def get_tavily_config(self) -> Dict[str, str]:
+        """Get Tavily search configuration."""
+        return self._config.get("tavily", {})
 
 
 # Global config instance
